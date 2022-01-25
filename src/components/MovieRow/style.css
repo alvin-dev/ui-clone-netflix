@@ -1,0 +1,85 @@
+h2{
+  padding: 0 60px;
+  font-size: 1.4rem;
+  margin: 0 0 0.5em 0;
+}
+
+.movieRowSliderArea{
+  margin: 1.5rem 0;
+}
+
+.movieRowlist {
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  position: relative;
+}
+
+.movieRowlist .movieRowitems{
+  display: inline-block;
+  flex: 0 0 16.6%;
+  padding: 0 0.2rem;
+  border-radius: 0.2rem;
+  transition: transform .54s cubic-bezier(.5,0,.1,1) 0s;
+  /* transition-delay: 1s ; */
+  cursor: pointer;
+
+  width: 240px;
+}
+
+.movieRowlist .movieRowitems img{
+  width: 100%;
+  height: auto;
+}
+
+.movieRowlist .items:first-child {
+  padding-left: 0;
+}
+
+/* MODAL */
+
+.movieModalItemsWrapper{
+  width: 100%;
+}
+
+.movieModalItems{
+  visibility: hidden;
+  display: inherit;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+ul.modalItemsButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+ul.modalItemsButtons li{
+  list-style: none;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: aquamarine;
+}
+
+/*-----*/
+
+
+/* HOVER */
+
+.movieRowitems:hover {
+  transform: scale(1.5) !important;
+}
+
+.movieRowitems:hover .movieModalItems{
+  visibility: visible;
+}
+
+
+/*-----*/
